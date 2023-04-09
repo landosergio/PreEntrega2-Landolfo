@@ -192,9 +192,7 @@ footer iframe {
   width: 100%;
 }
 
-footer a {
-  color: black;
-}
+
 
 /* OTROS */
 
@@ -213,9 +211,7 @@ footer a {
 }
 
 .redes__red img {
-  width: 15%;
   max-width: 2rem;
-  max-height: 2rem;
   margin-left: 0.5rem;
 }
 
