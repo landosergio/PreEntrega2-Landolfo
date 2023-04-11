@@ -1,4 +1,4 @@
-/* GENERAL  */
+/* -----GENERAL-----  */
 
 /* Cursor */
 
@@ -45,9 +45,7 @@ a {
   background-color: skyblue;
 }
 
-/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
-
-/* HEADER */
+/* -----HEADER----- */
 
 header {
   background-color: #ffe7eb;
@@ -56,6 +54,20 @@ header {
 .navbar .form-control {
   border: 1px solid white;
 }
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+
+/**/
+/**/
+/**/
+/**/
+
+/*                      I     N     D     E     X                                 */
+
+/**/
+/**/
+/**/
+/**/
 
 /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
 
@@ -149,7 +161,67 @@ main .seccion-productos__producto:hover .producto__info-adicional {
 
 /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
 
-/* SECCION PROMO */
+/**/
+/**/
+/**/
+/**/
+
+/*                     A    R    T    Í    C    U    L    O                       */
+
+/**/
+/**/
+/**/
+/**/
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+
+/* -----SECCIÓN ARTÍCULO----- */
+
+.seccion-articulo * {
+  border: 1px solid red;
+}
+
+/* -----FOOTER-----  */
+
+footer {
+  height: 15rem;
+}
+
+.footer__redes-y-mapa {
+  height: 100%;
+}
+
+.footer__mapa {
+  height: 80%;
+}
+
+footer iframe {
+  height: 75%;
+  width: 100%;
+}
+
+/* -----OTROS----- */
+
+/* Redes sociales */
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redes__red {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+
+.redes__red img {
+  max-width: 2rem;
+  margin-left: 0.5rem;
+}
+
+/* -----PROMO----- */
 
 .promo__fila {
   height: 15rem;
@@ -171,48 +243,6 @@ main .seccion-productos__producto:hover .producto__info-adicional {
 
 .promo__imagen img {
   width: 50%;
-}
-
-/* FOOTER  */
-
-footer {
-  height: 15rem;
-}
-
-.footer__redes-y-mapa {
-  height: 100%;
-}
-
-.footer__mapa {
-  height: 80%;
-}
-
-footer iframe {
-  height: 75%;
-  width: 100%;
-}
-
-
-
-/* OTROS */
-
-/* Redes sociales */
-
-.redes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.redes__red {
-  display: flex;
-  align-items: center;
-  padding: 0.4rem 0;
-}
-
-.redes__red img {
-  max-width: 2rem;
-  margin-left: 0.5rem;
 }
 
 /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/

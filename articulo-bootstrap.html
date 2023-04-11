@@ -51,7 +51,6 @@
 
   <body>
     <!-- HEADER -->
-
     <header>
       <div
         class="header__marca container-fluid d-flex align-items-center justify-content-start py-2"
@@ -112,230 +111,338 @@
 
     <h1 class="titulo-principal text-center py-4 m-0">Bienvenido</h1>
 
+    <!-- MAIN -->
 
-        <!-- MAIN -->
-        <main class="container gx-0 gx-md-4 pb-3 mt-3">
-      <div class="row">
-          
-        <!-- Sección "Artículo" -->
+    <main class="container gx-0 gx-md-4 pb-3 mt-3">
+      <!-- Sección "Artículo" -->
 
-        <section class="articulo col-8">
-            <div class="info-articulo">
-              <figure>
-                <img
-                  src="images/tv-samsung.png"
-                  alt="Televisor Samsung 50 pulgadas"
-                  width="200"
-                  height="200"
-                />
-    
-                <figcaption>
-                  Smart TV de 50", 4K, Widescreen. Frecuencia de barrido 60Hz.
-                  Potencia RMS 20W. Salidas de audio Optical / HDMI ARC. Bluetooth.
-                  Wi Fi. Sintonizador TDA. Tecnologia UHD. 1 USB. 3 HDMI. Incluye
-                  control remoto, pie, manuales. Entrada de pc (HDMI) Tipo de sonido
-                  2CH.
-                </figcaption>
-              </figure>
-    
-              <div class="ficha-tecnica col-4">
-                <h3>Ficha Técnica</h3>
-                <table>
-                  <tr>
-                    <th>Alto</th>
-                    <td>72</td>
-                  </tr>
-                  <tr>
-                    <th>Ancho</th>
-                    <td>112</td>
-                  </tr>
-                  <tr>
-                    <th>Color</th>
-                    <td>Gris</td>
-                  </tr>
-                  <tr>
-                    <th>Garantía</th>
-                    <td>12</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-    
-            <div class="opciones-compra">
-              <div class="envio">
-                <h3>Opciones de envío</h3>
-                <select name="envio">
-                  <option value="domicilio">A domicilio</option>
-                  <option value="correo">Retiro en correo</option>
-                </select>
-              </div>
-              <div class="cuotas">
-                <h3>Opciones de pago</h3>
-                <select name="cuotas">
-                  <option value="3">3 cuotas</option>
-                  <option option value="6">6 cuotas</option>
-                  <option value="12">12 cuotas</option>
-                </select>
-              </div>
-              <img src="images/tarjeta.png" alt="" />
-            </div>
-            <div class="info-vendedor">
-              <p>Nombre vendedor</p>
-              <p>Cantidad de ventas</p>
-              <p>Reputación</p>
-            </div>
-          </section>
-
-          
-
-          <!-- "Promo" -->
-
-          <div class="container gx-0">
-            <div class="row promo__fila gx-0 rounded-4">
-              <div
-                class="promo__texto col-6 d-flex flex-column align-items-center justify-content-center text-center"
-              >
-                <span class="w-75 text-white fw-semibold"
-                  >¿Todavía no tenés tu tarjeta de Mercado Liebre?</span
-                >
+      <section class="seccion-articulo row">
+        <div class="seccion-articulo__articulo col-12 col-lg-8">
+          <div class="seccion-articulo__imagen-y-descripcion">
+            <!-- Carrusel -->
+            <div
+              id="carouselExampleIndicators"
+              class="seccion-articulo__imagen carousel slide"
+            >
+              <div class="carousel-indicators">
                 <button
                   type="button"
-                  class="btn btn-light mt-3 mt-sm-4 p-2 fw-bold border-dark border-1"
-                >
-                  ¡Pedila!
-                </button>
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-              <div
-                class="promo__imagen col-6 d-flex align-items-center justify-content-center text-center"
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/tv-samsung.png"
+                    class="d-block w-100"
+                    alt="Televisor"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/tv-samsung2.png"
+                    class="d-block w-100"
+                    alt="Dos personas mirando televisión"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/tv-samsung3.png"
+                    class="d-block w-100"
+                    alt="Televisor"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
               >
-                <img src="images/logo.png" alt="Logo de Mercado Liebre" />
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- Descripción  -->
+            <!-- // Acordeón // -->
+
+            <div
+              class="seccion-articulo__acordeon accordion d-md-none my-2"
+              id="accordionExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Descripción general
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Smart TV de 50", 4K, Widescreen. Frecuencia de barrido 60Hz.
+                    Potencia RMS 20W. Salidas de audio Optical / HDMI ARC.
+                    Bluetooth. Wi Fi. Sintonizador TDA. Tecnologia UHD. 1 USB. 3
+                    HDMI. Incluye control remoto, pie, manuales. Entrada de pc
+                    (HDMI) Tipo de sonido 2CH.
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- // Texto simple // -->
+            <p class="seccion-articulo__texto w-100 p-4 d-none d-md-block my-2">
+              Smart TV de 50", 4K, Widescreen. Frecuencia de barrido 60Hz.
+              Potencia RMS 20W. Salidas de audio Optical / HDMI ARC. Bluetooth.
+              Wi Fi. Sintonizador TDA. Tecnologia UHD. 1 USB. 3 HDMI. Incluye
+              control remoto, pie, manuales. Entrada de pc (HDMI) Tipo de sonido
+              2CH.
+            </p>
           </div>
-<!-- Sección "Sugeridos" -->
-<section class="seccion-productos pt-4 rounded-4">
-    <h2 class="seccion-productos__titulo shadow-sm">
-      Podrían interesarte...
-    </h2>
-    <div
-      class="container seccion-productos__contenedor mb-3 rounded-2 px-3"
-    >
-      <div class="seccion-productos__fila row py-1">
-        <!-- Producto -->
-        <div class="col-6 col-md-3 my-2">
-          <a href="articulo.html">
-            <div
-              class="seccion-productos__producto d-flex flex-column justify-content-center align-items-center"
-            >
-              <span
-                class="seccion-productos__nombre-producto w-100 text-center shadow-sm rounded-top-2 pb-1"
-              >
-                Producto
-              </span>
-              <div
-                class="seccion-productos__contenedor-relativo-imagen"
-              >
-                <img
-                  src="images/cocina.jpg"
-                  alt="Cocina"
-                  class="seccion-productos__imagen-producto shadow-sm rounded-bottom-2 w-100"
-                />
-                <span class="producto__info-adicional">
-                  Info adicional</span
-                >
-              </div>
-            </div>
-          </a>
+
+          <div
+            class="seccion-articulo__ficha-tecnica d-flex flex-column align-items-center my-2"
+          >
+            <h3>Ficha Técnica</h3>
+            <table>
+              <tr>
+                <th>Alto</th>
+                <td>72</td>
+              </tr>
+              <tr>
+                <th>Ancho</th>
+                <td>112</td>
+              </tr>
+              <tr>
+                <th>Color</th>
+                <td>Gris</td>
+              </tr>
+              <tr>
+                <th>Garantía</th>
+                <td>12</td>
+              </tr>
+            </table>
+          </div>
         </div>
 
-        <!-- Producto -->
-        <div class="col-6 col-md-3 my-2">
-          <a href="articulo.html">
+        <div
+          class="seccion-articulo__opciones-compra-y-vendedor col-12 col-lg-4 my-4"
+        >
+          <div
+            class="seccion-articulo__opciones-compra d-flex flex-column align-items-center my-2"
+          >
             <div
-              class="seccion-productos__producto d-flex flex-column justify-content-center align-items-center"
+              class="seccion-articulo__envio d-flex flex-column align-items-end my-1"
             >
-              <span
-                class="seccion-productos__nombre-producto w-100 text-center shadow-sm rounded-top-2 pb-1"
-              >
-                Producto
-              </span>
-              <div
-                class="seccion-productos__contenedor-relativo-imagen"
-              >
-                <img
-                  src="images/tv-samsung.png"
-                  alt="Televisor"
-                  class="seccion-productos__imagen-producto shadow-sm rounded-bottom-2 w-100"
-                />
-                <span class="producto__info-adicional">
-                  Info adicional</span
-                >
-              </div>
+              <span class="mb-1 fs-5">Opciones de envío</span>
+              <select class="form-select" name="envio">
+                <option value="domicilio">A domicilio</option>
+                <option value="correo">Retiro en correo</option>
+              </select>
             </div>
-          </a>
+            <div
+              class="seccion-articulo__pago d-flex flex-column align-items-end my-1"
+            >
+              <span class="mb-1 fs-5">Opciones de pago</span>
+              <select class="form-select" name="cuotas">
+                <option value="3">3 cuotas</option>
+                <option option value="6">6 cuotas</option>
+                <option value="12">12 cuotas</option>
+              </select>
+            </div>
+            <img
+              src="images/tarjeta.png"
+              alt="Tarjetas de crédito"
+              class="w-25"
+            />
+          </div>
+          <div
+            class="seccion-articulo__vendedor d-flex flex-column align-items-center"
+          >
+            <span class="my-3 fs-5">Vendedor</span>
+            <span class="my-3 fs-5">Cantidad de ventas</span>
+            <span class="my-3 fs-5">Reputación</span>
+          </div>
         </div>
+      </section>
 
-        <!-- Producto -->
-        <div class="col-6 col-md-3 my-2">
-          <a href="articulo.html">
-            <div
-              class="seccion-productos__producto d-flex flex-column justify-content-center align-items-center"
-            >
-              <span
-                class="seccion-productos__nombre-producto w-100 text-center shadow-sm rounded-top-2 pb-1"
-              >
-                Producto
-              </span>
-              <div
-                class="seccion-productos__contenedor-relativo-imagen"
-              >
-                <img
-                  src="images/piano.png"
-                  alt="Piano"
-                  class="seccion-productos__imagen-producto shadow-sm rounded-bottom-2 w-100"
-                />
-                <span class="producto__info-adicional">
-                  Info adicional</span
-                >
-              </div>
-            </div>
-          </a>
-        </div>
+      <!-- "Promo" -->
 
-        <!-- Producto -->
-        <div class="col-6 col-md-3 my-2">
-          <a href="articulo.html">
-            <div
-              class="seccion-productos__producto d-flex flex-column justify-content-center align-items-center"
+      <div class="container gx-0">
+        <div class="row promo__fila gx-0 rounded-4">
+          <div
+            class="promo__texto col-6 d-flex flex-column align-items-center justify-content-center text-center"
+          >
+            <span class="w-75 text-white fw-semibold"
+              >¿Todavía no tenés tu tarjeta de Mercado Liebre?</span
             >
-              <span
-                class="seccion-productos__nombre-producto w-100 text-center shadow-sm rounded-top-2 pb-1"
-              >
-                Producto
-              </span>
-              <div
-                class="seccion-productos__contenedor-relativo-imagen"
-              >
-                <img
-                  src="images/zapatilla.jpeg"
-                  alt="Zapatilla"
-                  class="seccion-productos__imagen-producto shadow-sm rounded-bottom-2 w-100"
-                />
-                <span class="producto__info-adicional">
-                  Info adicional</span
-                >
-              </div>
-            </div>
-          </a>
+            <button
+              type="button"
+              class="btn btn-light mt-3 mt-sm-4 p-2 fw-bold border-dark border-1"
+            >
+              ¡Pedila!
+            </button>
+          </div>
+          <div
+            class="promo__imagen col-6 d-flex align-items-center justify-content-center text-center"
+          >
+            <img src="images/logo.png" alt="Logo de Mercado Liebre" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</div>
+      <!-- Sección "Sugeridos" -->
+      <section class="seccion-productos pt-4 rounded-4">
+        <h2 class="seccion-productos__titulo shadow-sm">
+          Podrían interesarte...
+        </h2>
+        <div
+          class="container seccion-productos__contenedor mb-3 rounded-2 px-3"
+        >
+          <div class="seccion-productos__fila row py-1">
+            <!-- Producto -->
+            <div class="col-6 col-md-3 my-2">
+              <a href="articulo.html">
+                <div
+                  class="seccion-productos__producto d-flex flex-column justify-content-center align-items-center"
+                >
+                  <span
+                    class="seccion-productos__nombre-producto w-100 text-center shadow-sm rounded-top-2 pb-1"
+                  >
+                    Producto
+                  </span>
+                  <div class="seccion-productos__contenedor-relativo-imagen">
+                    <img
+                      src="images/cocina.jpg"
+                      alt="Cocina"
+                      class="seccion-productos__imagen-producto shadow-sm rounded-bottom-2 w-100"
+                    />
+                    <span class="producto__info-adicional">
+                      Info adicional</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
 
-        </main>
+            <!-- Producto -->
+            <div class="col-6 col-md-3 my-2">
+              <a href="articulo.html">
+                <div
+                  class="seccion-productos__producto d-flex flex-column justify-content-center align-items-center"
+                >
+                  <span
+                    class="seccion-productos__nombre-producto w-100 text-center shadow-sm rounded-top-2 pb-1"
+                  >
+                    Producto
+                  </span>
+                  <div class="seccion-productos__contenedor-relativo-imagen">
+                    <img
+                      src="images/tv-samsung.png"
+                      alt="Televisor"
+                      class="seccion-productos__imagen-producto shadow-sm rounded-bottom-2 w-100"
+                    />
+                    <span class="producto__info-adicional">
+                      Info adicional</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
 
-        
+            <!-- Producto -->
+            <div class="col-6 col-md-3 my-2">
+              <a href="articulo.html">
+                <div
+                  class="seccion-productos__producto d-flex flex-column justify-content-center align-items-center"
+                >
+                  <span
+                    class="seccion-productos__nombre-producto w-100 text-center shadow-sm rounded-top-2 pb-1"
+                  >
+                    Producto
+                  </span>
+                  <div class="seccion-productos__contenedor-relativo-imagen">
+                    <img
+                      src="images/piano.png"
+                      alt="Piano"
+                      class="seccion-productos__imagen-producto shadow-sm rounded-bottom-2 w-100"
+                    />
+                    <span class="producto__info-adicional">
+                      Info adicional</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Producto -->
+            <div class="col-6 col-md-3 my-2">
+              <a href="articulo.html">
+                <div
+                  class="seccion-productos__producto d-flex flex-column justify-content-center align-items-center"
+                >
+                  <span
+                    class="seccion-productos__nombre-producto w-100 text-center shadow-sm rounded-top-2 pb-1"
+                  >
+                    Producto
+                  </span>
+                  <div class="seccion-productos__contenedor-relativo-imagen">
+                    <img
+                      src="images/zapatilla.jpeg"
+                      alt="Zapatilla"
+                      class="seccion-productos__imagen-producto shadow-sm rounded-bottom-2 w-100"
+                    />
+                    <span class="producto__info-adicional">
+                      Info adicional</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
 
@@ -376,6 +483,14 @@
           href="https://www.flaticon.com/free-icons/rabbit"
           title="rabbit icons"
           ><p>Rabbit icons created by imaginationlol - Flaticon</p></a
+        >
+        <a
+          class="col-12 text-bg-dark"
+          href="https://www.flaticon.com/free-icons/bank"
+          title="bank icons"
+          ><p class="atrib">
+            Bank icons created by smashingstocks - Flaticon
+          </p></a
         >
       </div>
     </footer>
