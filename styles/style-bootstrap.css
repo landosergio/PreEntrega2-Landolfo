@@ -178,7 +178,6 @@ main .seccion-productos__producto:hover .producto__info-adicional {
 /* -----SECCIÓN ARTÍCULO----- */
 
 .seccion-articulo * {
-  border: 1px solid red;
 }
 
 /* -----FOOTER-----  */
@@ -308,6 +307,8 @@ footer iframe {
   .footer__mapa p {
     padding-bottom: 1rem;
   }
+
+  /* Sección Artículo  */
 }
 
 /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
