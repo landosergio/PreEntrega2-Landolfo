@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- ESTILO -->
-
-    <link href="styles/style1.css" rel="stylesheet" type="text/css" />
-
     <!-- FAVICON -->
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -12,15 +8,14 @@
     <!-- FUENTES -->
 
     <!-- Oswald -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <!-- Noto Serif -->
 
+    <!-- Noto Serif -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -28,29 +23,28 @@
     />
 
     <!-- META -->
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercado Liebre</title>
+
+    <!-- ESTILO -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <!-- BODY -->
-
   <body>
     <!-- HEADER -->
-
-    <header>
-      <div id="logo-y-tit">
+    <header class="header">
+      <div class="header__brand">
         <a href="index.html">
-          <img src="images/logo.png" id="logo" alt="Logo de Mercado Liebre" />
+          <img src="images/logo.png" alt="Logo de Mercado Liebre" />
         </a>
-        <a href="index.html"><h2 id="tit">Mercado Liebre</h2></a>
+        <h2><a href="index.html">Mercado Liebre</a></h2>
       </div>
 
       <!-- Nav -->
-
-      <nav>
+      <nav class="header__nav">
         <ul>
           <li><a href="index.html"> Inicio</a></li>
           <li><a href="ofertas.html"> Ofertas </a></li>
@@ -61,42 +55,66 @@
       </nav>
     </header>
 
+    <!-- MAIN -->
+
     <main>
       <h1>Tus últimas compras</h1>
 
       <!-- Sección "Compras" -->
+      <section class="seccion-compras">
+        <!-- Compra -->
+        <div class="seccion-compras__compra">
+          <img
+            class="seccion-compras__imagen"
+            src="images/tv-samsung.png"
+            alt="TV Samsung 50 pulgadas"
+          />
+          <p class="seccion-compras__info-prod">TV Samsung 50 pulgadas</p>
+          <div class="seccion-compras__opciones">
+            <a href="articulo.html"><span>Publicación</span></a>
+            <a href="ayuda.html"><span>Ayuda</span></a>
+          </div>
+        </div>
 
-      <section>
-        <div class="compra">
-          <img src="images/tv-samsung.png" alt="TV Samsung 50 pulgadas" />
-          <p class="info-prod">TV Samsung 50 pulgadas</p>
-          <div class="opciones">
-            <a href="articulo.html"><p>Volver a comprar</p></a>
-            <a href="ayuda.html"><p>Ayuda</p></a>
+        <!-- Compra -->
+        <div class="seccion-compras__compra">
+          <img
+            class="seccion-compras__imagen"
+            src="images/cocina.jpg"
+            alt="TV Samsung 50 pulgadas"
+          />
+          <p class="seccion-compras__info-prod">Cocina</p>
+          <div class="seccion-compras__opciones">
+            <a href="articulo.html"><span>Publicación</span></a>
+            <a href="ayuda.html"><span>Ayuda</span></a>
           </div>
         </div>
-        <div class="compra">
-          <img src="images/tv-samsung.png" alt="TV Samsung 50 pulgadas" />
-          <p class="info-prod">TV Samsung 50 pulgadas</p>
-          <div class="opciones">
-            <a href="articulo.html"><p>Volver a comprar</p></a>
-            <a href="ayuda.html"><p>Ayuda</p></a>
+
+        <!-- Compra -->
+        <div class="seccion-compras__compra">
+          <img
+            class="seccion-compras__imagen"
+            src="images/zapatilla.jpeg"
+            alt="Zapatilla"
+          />
+          <p class="seccion-compras__info-prod">Zapatillas Nike</p>
+          <div class="seccion-compras__opciones">
+            <a href="articulo.html"><span>Publicación</span></a>
+            <a href="ayuda.html"><span>Ayuda</span></a>
           </div>
         </div>
-        <div class="compra">
-          <img src="images/tv-samsung.png" alt="TV Samsung 50 pulgadas" />
-          <p class="info-prod">TV Samsung 50 pulgadas</p>
-          <div class="opciones">
-            <a href="articulo.html"><p>Volver a comprar</p></a>
-            <a href="ayuda.html"><p>Ayuda</p></a>
-          </div>
-        </div>
-        <div class="compra">
-          <img src="images/tv-samsung.png" alt="TV Samsung 50 pulgadas" />
-          <p class="info-prod">TV Samsung 50 pulgadas</p>
-          <div class="opciones">
-            <a href="articulo.html"><p>Volver a comprar</p></a>
-            <a href="ayuda.html"><p>Ayuda</p></a>
+
+        <!-- Compra -->
+        <div class="seccion-compras__compra">
+          <img
+            class="seccion-compras__imagen"
+            src="images/piano.png"
+            alt="Piano"
+          />
+          <p class="seccion-compras__info-prod">Piano vertical</p>
+          <div class="seccion-compras__opciones">
+            <a href="articulo.html"><span>Publicación</span></a>
+            <a href="ayuda.html"><span>Ayuda</span></a>
           </div>
         </div>
       </section>
