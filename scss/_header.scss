@@ -1,0 +1,77 @@
+@use "var-mix";
+
+//// HEADER
+.header {
+  @include var-mix.flex(column, stretch, flex-start);
+  background-color: var-mix.$custom-pink;
+
+  &__brand {
+    @include var-mix.flex(row, center, center);
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+
+    img {
+      width: 4rem;
+    }
+
+    h2 {
+      margin-left: 0.5rem;
+
+      font-size: 1.5rem;
+
+      a {
+        color: black;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  // Navbar
+
+  &__nav {
+    width: 100%;
+    background-color: var-mix.$custom-darkgrey;
+
+    ul {
+      @include var-mix.flex(column, stretch, flex-start);
+      margin: 0.5rem;
+      li {
+        padding: 0.5rem 0;
+        a:hover {
+          color: var-mix.$custom-grey;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media screen and (min-width: 576px) {
+  .header {
+    &__brand {
+      margin: 0.5rem 1rem;
+      img {
+        width: 6rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    &__nav {
+      ul {
+        @include var-mix.flex(row, flex-start, center);
+        margin: 0.5rem 1rem;
+        li {
+          padding: 0.5rem 1rem 0.5rem 0;
+
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

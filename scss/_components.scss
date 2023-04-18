@@ -1,0 +1,68 @@
+@use "var-mix";
+
+// BOTONES
+
+.button {
+  padding: 0.4rem 1rem;
+
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+
+  border-radius: 6px;
+}
+
+.button--dark {
+  @extend .button;
+
+  color: white;
+
+  background-color: var-mix.$custom-darkgrey;
+
+  box-shadow: var-mix.$custom-shadow-white;
+
+  &:hover {
+    background-color: black;
+  }
+  &:active {
+    box-shadow: var-mix.$custom-shadow-darkgrey--active;
+  }
+}
+
+.button--light {
+  @extend .button;
+
+  color: var-mix.$custom-darkgrey;
+
+  background-color: white;
+
+  box-shadow: var-mix.$custom-shadow-darkgrey;
+
+  &:hover {
+    background-color: var-mix.$custom-grey;
+  }
+  &:active {
+    box-shadow: var-mix.$custom-shadow-white--active;
+  }
+}
+
+// REDES
+
+.redes {
+  @include var-mix.flex(column, center, flex-start);
+
+  &__red {
+    @include var-mix.flex(row, flex-start, center);
+
+    margin: 0.5rem 0;
+
+    span {
+      margin-right: 0.5rem;
+      color: white;
+    }
+
+    img {
+      width: 2rem;
+    }
+  }
+}
