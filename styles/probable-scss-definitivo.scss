@@ -1,4 +1,7 @@
-@use "var-mix"; // RESET
+@use "var-mix";
+
+// RESET
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +13,14 @@
 
 // CARAC. GENERALES
 
-a {
+a,
+.button {
   color: white;
   cursor: pointer;
 
   img {
     cursor: pointer;
   }
-}
-
-img {
-  width: 5rem;
 }
 
 /* Fuentes  */
@@ -40,16 +40,4 @@ h4 {
   a {
     font-family: "Oswald", sans-serif;
   }
-}
-
-// TÍTULOS
-
-h1 {
-  padding: 1rem 0.5rem;
-
-  font-size: 3rem;
-  text-align: center;
-  color: white;
-
-  background-color: var-mix.$skyblue;
 }

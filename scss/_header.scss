@@ -6,17 +6,19 @@
   background-color: var-mix.$custom-pink;
 
   &__brand {
-    @include var-mix.flex(row, center, center);
-    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    @include var-mix.flex(row, flex-start, center);
+
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
 
     img {
-      width: 4rem;
+      width: 60px;
     }
 
     h2 {
       margin-left: 0.5rem;
 
       font-size: 1.5rem;
+      font-weight: 500;
 
       a {
         color: black;
@@ -52,12 +54,11 @@
 @media screen and (min-width: 576px) {
   .header {
     &__brand {
-      margin: 0.5rem 1rem;
-      img {
-        width: 6rem;
-      }
+      padding: 0.5rem 1rem;
 
       h2 {
+        margin-left: 1rem;
+
         font-size: 2rem;
       }
     }
@@ -67,9 +68,9 @@
         @include var-mix.flex(row, flex-start, center);
         margin: 0.5rem 1rem;
         li {
-          padding: 0.5rem 1rem 0.5rem 0;
+          padding: 0.4rem 1.5rem 0.4rem 0;
 
-          font-size: 1.4rem;
+          font-size: 1rem;
         }
       }
     }

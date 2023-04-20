@@ -7,13 +7,11 @@
   cursor: default;
 }
 
-a,
-.button {
+a {
   color: white;
   cursor: pointer;
 }
-a img,
-.button img {
+a img {
   cursor: pointer;
 }
 
@@ -35,6 +33,12 @@ h3,
 h4 {
   font-family: "Oswald", sans-serif;
 }
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  font-family: "Oswald", sans-serif;
+}
 
 h1 {
   padding: 1rem 0.5rem;
@@ -50,6 +54,7 @@ h1 {
   font-size: 1rem;
   font-weight: bold;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .button--dark {
@@ -107,16 +112,17 @@ h1 {
 .header__brand {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 0.5rem 0rem 0.5rem 0.5rem;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
 }
 .header__brand img {
-  width: 4rem;
+  width: 60px;
 }
 .header__brand h2 {
   margin-left: 0.5rem;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 .header__brand h2 a {
   color: black;
@@ -144,12 +150,10 @@ h1 {
 
 @media screen and (min-width: 576px) {
   .header__brand {
-    margin: 0.5rem 1rem;
-  }
-  .header__brand img {
-    width: 6rem;
+    padding: 0.5rem 1rem;
   }
   .header__brand h2 {
+    margin-left: 1rem;
     font-size: 2rem;
   }
   .header__nav ul {
@@ -160,8 +164,8 @@ h1 {
     margin: 0.5rem 1rem;
   }
   .header__nav ul li {
-    padding: 0.5rem 1rem 0.5rem 0;
-    font-size: 1.4rem;
+    padding: 0.4rem 1.5rem 0.4rem 0;
+    font-size: 1rem;
   }
 }
 footer {
@@ -224,8 +228,8 @@ footer {
 }
 .seccion-compras__compra {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "nombre nombre nombre nombre nombre nombre " "imagen imagen imagen info info info" "opciones opciones opciones opciones opciones opciones";
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "nombre nombre" "imagen info " "opciones opciones";
   row-gap: 0.2rem;
   max-width: 576px;
   margin: 3rem auto;
@@ -248,6 +252,7 @@ footer {
 .seccion-compras__imagen {
   grid-area: imagen;
   justify-self: center;
+  align-self: center;
   width: 10rem;
   height: 10rem;
   padding: 0.5rem;
@@ -256,9 +261,10 @@ footer {
 .seccion-compras__info-prod {
   grid-area: info;
   height: 100%;
-  padding: 5% 10%;
-  background-color: rgb(255, 231, 235);
+  padding: 0.8rem 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
+  background-color: rgb(255, 231, 235);
   border-top-left-radius: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -281,14 +287,16 @@ footer {
 
 @media screen and (min-width: 992px) {
   .seccion-compras__compra {
-    grid-template-areas: "imagen imagen nombre nombre nombre nombre" "imagen imagen info info info opciones";
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-areas: "imagen nombre nombre" "imagen info opciones";
+    grid-auto-rows: 1fr 3fr;
+    max-width: 992px;
     row-gap: 0.4rem;
     column-gap: 0.4rem;
-    max-width: 992px;
   }
   .seccion-compras__nombre-producto {
     padding: 0.8rem 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
   }
   .seccion-compras__imagen {
@@ -296,7 +304,8 @@ footer {
     height: 15rem;
   }
   .seccion-compras__info-prod {
-    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
