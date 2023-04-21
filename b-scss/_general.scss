@@ -1,0 +1,44 @@
+/* Cursor */
+
+p,
+h1,
+h2,
+h3,
+h4,
+span {
+  cursor: default;
+}
+
+a * {
+  cursor: pointer;
+}
+
+/* Fuentes  */
+
+p,
+a,
+ul,
+span {
+  font-family: "Noto Serif", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+/* Enlaces */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.titulo-principal {
+  font-size: 3rem;
+  color: white;
+
+  background-color: skyblue;
+}

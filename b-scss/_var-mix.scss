@@ -1,0 +1,30 @@
+//// VARIABLES
+
+// Colores
+$custom-pink: rgb(255, 231, 235);
+$custom-grey: rgb(220, 220, 220);
+$custom-darkgrey: rgb(33, 37, 41);
+$skyblue: skyblue;
+$white: white;
+$black: black;
+
+$custom-shadow-white: 1px -1px 4px $white;
+$custom-shadow-white--active: -1px -1px 4px $black;
+
+$custom-shadow-darkgrey: 1px 1px 4px $custom-darkgrey;
+$custom-shadow-darkgrey--active: -1px 1px 4px $white;
+
+//// MIXINS
+@mixin flex($direccion, $main, $sec) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $main;
+  align-items: $sec;
+}
+
+@mixin custom-border-radius($top-l, $top-r, $bottom-r, $bottom-l) {
+  border-top-left-radius: $top-l;
+  border-top-right-radius: $top-r;
+  border-bottom-right-radius: $bottom-r;
+  border-bottom-left-radius: $bottom-l;
+}
