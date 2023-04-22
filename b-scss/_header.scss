@@ -1,7 +1,9 @@
+@use "var-mix";
+
 header {
-  background-color: #ffe7eb;
+  background-color: var-mix.$custom-pink;
 }
 
 .navbar .form-control {
-  border: 1px solid white;
+  border: 1px solid var-mix.$white;
 }

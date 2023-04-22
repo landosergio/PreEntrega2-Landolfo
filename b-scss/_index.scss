@@ -1,0 +1,63 @@
+@use "var-mix";
+
+// SECCIÓN "PRODUCTOS"
+
+.seccion-productos {
+  background-color: var-mix.$custom-pink;
+}
+
+.seccion-productos__titulo {
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  margin: 0 auto 1.5rem;
+
+  font-size: 1.4rem;
+  color: var-mix.$custom-darkgrey;
+
+  border-radius: 0.4rem;
+  background-color: var-mix.$white;
+}
+
+// Sección "Productos" -- Columna
+
+.seccion-productos--columna {
+  background-color: var-mix.$white;
+}
+
+// RESPONSIVE
+
+/* 420px */
+
+@media screen and (min-width: 420px) {
+  .seccion-productos__titulo {
+    font-size: 1.6rem;
+  }
+}
+
+/* 768px */
+
+@media screen and (min-width: 768px) {
+  .seccion-productos--columna__titulo {
+    font-size: 0.8rem;
+  }
+}
+
+/* 992px */
+
+@media screen and (min-width: 992px) {
+  .seccion-productos__titulo {
+    font-size: 2rem;
+  }
+
+  .seccion-productos--columna__titulo {
+    font-size: 1rem;
+  }
+}
+
+/* 1200px */
+
+@media screen and (min-width: 1200px) {
+  .seccion-productos--columna__titulo {
+    font-size: 1.4rem;
+  }
+}

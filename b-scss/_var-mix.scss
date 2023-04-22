@@ -8,6 +8,7 @@ $skyblue: skyblue;
 $white: white;
 $black: black;
 
+// Sombra botones
 $custom-shadow-white: 1px -1px 4px $white;
 $custom-shadow-white--active: -1px -1px 4px $black;
 
@@ -27,4 +28,14 @@ $custom-shadow-darkgrey--active: -1px 1px 4px $white;
   border-top-right-radius: $top-r;
   border-bottom-right-radius: $bottom-r;
   border-bottom-left-radius: $bottom-l;
+}
+
+@mixin gradient-promo {
+  background: rgb(9, 79, 193);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 79, 193, 1) 0%,
+    rgba(33, 102, 214, 1) 35%,
+    rgba(135, 206, 235, 1) 100%
+  );
 }

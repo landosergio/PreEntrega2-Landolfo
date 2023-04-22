@@ -1,3 +1,5 @@
+@use "var-mix";
+
 footer {
   height: 15rem;
 }
@@ -15,6 +17,8 @@ footer iframe {
   width: 100%;
 }
 
+// RESPONSIVE
+
 /* 768px */
 
 @media screen and (min-width: 768px) {
@@ -28,5 +32,17 @@ footer iframe {
 
   .footer__mapa p {
     padding-bottom: 1rem;
+  }
+}
+
+/* 992px */
+
+@media screen and (min-width: 992px) {
+  footer iframe {
+    width: 60%;
+  }
+
+  .footer__mapa p {
+    font-size: 1.5rem;
   }
 }
