@@ -210,6 +210,29 @@ header {
     font-size: 1.4rem;
   }
 }
+/* 992px */
+@media screen and (min-width: 992px) {
+  .categorias .seccion-productos__titulo {
+    font-size: 1.5rem;
+  }
+  .categorias .producto__nombre-producto {
+    font-size: 0.8rem;
+  }
+  .categorias .producto--animacion__info-adicional {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .categorias .seccion-productos__titulo {
+    font-size: 1.8rem;
+  }
+  .categorias .producto__nombre-producto {
+    font-size: 1rem;
+  }
+  .categorias .producto--animacion__info-adicional {
+    font-size: 0.8rem;
+  }
+}
 .ayuda {
   background-color: rgb(255, 231, 235);
 }
