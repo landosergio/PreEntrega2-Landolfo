@@ -118,62 +118,102 @@
 
     <!--  -->
 
-    <h1>Centro de ayuda</h1>
+    <h1 class="titulo-principal text-center py-4 m-0">Centro de ayuda</h1>
 
     <!-- MAIN -->
 
-    <main>
-      <section class="form">
-        <form action="" method="post" enctype="text/plain">
-          <fieldset class="info">
-            <legend>Información personal</legend>
+    <main class="container">
+      <section class="row">
+        <form
+          action=""
+          method="post"
+          enctype="text/plain"
+          class="ayuda col-12 col-md-8 col-lg-6 my-3 pb-3 pt-2 mx-auto border border-2 border-light-subtle rounded-4"
+        >
+          <!-- Información personal -->
 
-            <label for="nombre">Nombre:</label>
-            <input name="nombre" type="text" />
+          <legend class="mt-0">Información personal</legend>
 
-            <label for="doc">Documento:</label>
-            <input name="doc" type="text" />
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              aria-describedby="emailHelp"
+            />
+          </div>
 
-            <label for="email">Mail:</label>
-            <input name="email" type="email" />
-          </fieldset>
-
-          <fieldset class="problema">
-            <legend>Información básica del problema</legend>
-
-            <div class="radiobox">
-              <p>¿Con qué operación tuviste un problema?</p>
-              <div>
-                <label for="op1">Compra</label>
-                <input type="radio" id="op1" name="op" value="op1" />
-              </div>
-              <div>
-                <label for="op2">Venta</label>
-                <input type="radio" id="op2" name="op" value="op2" />
-              </div>
-              <div>
-                <label for="op3">Envío</label>
-                <input type="radio" id="op3" name="op" value="op3" />
-              </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              Tu email no será visible por otros usuarios.
             </div>
-            <div class="selectbox">
-              <p>Elige la opción que mejor describa tu problema</p>
-              <select name="" id="">
-                <option value="pago">No recibí el pago</option>
-                <option value="producto">No llegó el producto</option>
-                <option value="defectuoso">El producto llegó defectuoso</option>
-              </select>
-            </div>
-          </fieldset>
+          </div>
 
-          <div class="textbox">
-            <p>Explícanos un poco más sobre tu problema</p>
-            <textarea name="descripcion" cols="80" rows="10"></textarea>
+          <!-- Problema -->
+          <legend class="mt-3">Información sobre el problema</legend>
+
+          <p>¿Con qué operación tuviste problemas?</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="operacion"
+              id="flexRadioDefault0"
+            />
+            <label class="form-check-label" for="flexRadioDefault0">
+              Compra
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="operacion"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Venta
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="operacion"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              Envío
+            </label>
+          </div>
+
+          <p>Elige la opción que mejor describa tu problema</p>
+
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">No recibí el pago</option>
+            <option value="2">No llegó el producto</option>
+            <option value="3">El producto llegó defectuoso</option>
+          </select>
+
+          <div class="mb-3">
+            <label for="textarea" class="form-label"
+              >Cuéntanos más sobre el problema.</label
+            >
+            <textarea class="form-control" id="textarea" rows="3"></textarea>
           </div>
 
           <div>
-            <input type="submit" />
-            <input type="reset" />
+            <input type="submit" class="btn btn-dark" />
+            <input type="reset" class="btn btn-dark" />
           </div>
         </form>
       </section>

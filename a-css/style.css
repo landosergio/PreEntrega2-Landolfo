@@ -210,5 +210,16 @@ header {
     font-size: 1.4rem;
   }
 }
+.ayuda {
+  background-color: rgb(255, 231, 235);
+}
+.ayuda #nombre,
+.ayuda #email {
+  max-width: 300px;
+}
+.ayuda #flexRadioDefault0:checked, .ayuda #flexRadioDefault1:checked, .ayuda #flexRadioDefault2:checked {
+  background-color: rgb(33, 37, 41);
+  border-color: rgb(33, 37, 41);
+}
 
 /*# sourceMappingURL=style.css.map */
