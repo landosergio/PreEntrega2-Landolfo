@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- ESTILO -->
-
-    <link href="styles/style1.css" rel="stylesheet" type="text/css" />
-
-    <!-- FAVICON -->
-
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-
     <!-- FUENTES -->
 
     <!-- Oswald -->
@@ -32,40 +24,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- BOOTSTRAP -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- ESTILO PERSONALIZADO -->
+
+    <link href="a-css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- TÍTULO -->
+
     <title>Mercado Liebre</title>
   </head>
 
   <!-- BODY -->
 
   <body>
+    <!--  -->
     <!-- HEADER -->
-
     <header>
-      <div id="logo-y-tit">
-        <a href="index.html">
-          <img src="images/logo.png" id="logo" alt="Logo de Mercado Liebre" />
+      <!-- Brand -->
+      <div
+        class="container-fluid d-flex align-items-center justify-content-start py-2"
+      >
+        <a class="navbar-brand pe-3" href="index.html">
+          <img src="images/logo.png" alt="Logo de Mercado Liebre" width="60" />
         </a>
-        <a href="index.html"><h2 id="tit">Mercado Liebre</h2></a>
+        <a class="nav-link" href="index.html">
+          <h2 class="text-dark">Mercado Liebre</h2></a
+        >
       </div>
 
-      <!-- Nav -->
-
-      <nav>
-        <ul>
-          <li><a href="index.html"> Inicio</a></li>
-          <li><a href="ofertas.html"> Ofertas </a></li>
-          <li><a href="compras.html"> Compras </a></li>
-          <li><a>Carrito</a></li>
-          <li><a href="ayuda.html"> Ayuda </a></li>
-        </ul>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compras.html">Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ayuda.html">Ayuda</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder=""
+                aria-label=""
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
+
+    <!--  -->
+
+    <h1>Ofertas</h1>
 
     <!-- MAIN -->
 
     <main>
-      <h1>Ofertas</h1>
-
       <!-- Sección "Categoría 1" -->
 
       <div class="fila">
@@ -244,24 +301,32 @@
 
     <!-- FOOTER -->
 
-    <footer>
-      <div class="footerbox">
-        <div class="redes">
-          <div class="red">
-            <p>Facebook</p>
-            <img src="images/fb-logo.png" alt="" />
+    <footer class="container-fluid bg-dark text-bg-dark">
+      <div
+        class="footer__redes-y-mapa row justify-content-center justify-content-sm-between"
+      >
+        <!--  -->
+        <!-- Redes -->
+        <div class="redes col-12 col-sm-3 mx-sm-3 my-3">
+          <div class="redes__red mx-auto mx-sm-0">
+            <span>Facebook</span>
+            <img src="images/fb-logo.png" alt="Logo de Facebook" />
           </div>
-          <div class="red">
-            <p>Twitter</p>
-            <img src="images/tw-logo.png" alt="" />
+          <div class="redes__red mx-auto mx-sm-0">
+            <span>Twitter</span>
+            <img src="images/tw-logo.png" alt="Logo de Twitter" />
           </div>
-          <div class="red">
-            <p>Instagram</p>
-            <img src="images/ig-logo.png" alt="" />
+          <div class="redes__red mx-auto mx-sm-0">
+            <span>Instagram</span>
+            <img src="images/ig-logo.png" alt="Logo de Instagram" />
           </div>
         </div>
-        <div class="mapa-y-tit">
-          <p>Nuestras oficinas</p>
+
+        <!-- Mapa -->
+        <div
+          class="footer__mapa col-12 col-sm-9 d-flex flex-column align-self-center align-items-center w-auto mx-sm-3 my-3"
+        >
+          <span class="mt-0 mb-2">Nuestras oficinas</span>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26075.023242718868!2d25.198602365691!3d0.5215123473433182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1678456933957!5m2!1ses-419!2sar"
             width="300"
@@ -274,11 +339,22 @@
         </div>
       </div>
 
-      <a href="https://www.flaticon.com/free-icons/rabbit" title="rabbit icons"
-        ><p class="atrib">
-          Rabbit icons created by imaginationlol - Flaticon
-        </p></a
-      >
+      <!-- Atribuciones -->
+      <div class="row">
+        <a
+          class="col-12 text-bg-dark"
+          href="https://www.flaticon.com/free-icons/rabbit"
+          title="rabbit icons"
+          ><p>Rabbit icons created by imaginationlol - Flaticon</p></a
+        >
+      </div>
     </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
