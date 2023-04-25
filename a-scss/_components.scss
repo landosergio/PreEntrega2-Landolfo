@@ -124,7 +124,12 @@
   &__fila {
     height: 15rem;
 
-    @include var-mix.gradient-promo;
+    background-image: url("../images/supermercado.jpg");
+
+    background-size: 170%;
+    background-position: 0% 100%;
+
+    animation: fondo-super 10s infinite 0s linear;
 
     border: 3px solid var-mix.$custom-darkgrey;
   }
@@ -136,7 +141,31 @@
   &__imagen {
     img {
       width: 50%;
+      animation: liebre 0.5s infinite 0s linear;
     }
+  }
+}
+
+@keyframes liebre {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-20deg) translatey(-10px);
+  }
+  70% {
+    transform: rotate(30deg);
+  }
+  100% {
+  }
+}
+
+@keyframes fondo-super {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 243% 100%;
   }
 }
 

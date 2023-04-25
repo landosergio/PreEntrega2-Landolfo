@@ -128,8 +128,10 @@ a {
 
 .promo__fila {
   height: 15rem;
-  background: rgb(9, 79, 193);
-  background: linear-gradient(90deg, rgb(9, 79, 193) 0%, rgb(33, 102, 214) 35%, rgb(135, 206, 235) 100%);
+  background-image: url("../images/supermercado.jpg");
+  background-size: 170%;
+  background-position: 0% 100%;
+  animation: fondo-super 10s infinite 0s linear;
   border: 3px solid rgb(33, 37, 41);
 }
 .promo__texto {
@@ -137,8 +139,28 @@ a {
 }
 .promo__imagen img {
   width: 50%;
+  animation: liebre 0.5s infinite 0s linear;
 }
 
+@keyframes liebre {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-20deg) translatey(-10px);
+  }
+  70% {
+    transform: rotate(30deg);
+  }
+}
+@keyframes fondo-super {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 243% 100%;
+  }
+}
 /* 576px */
 @media screen and (min-width: 576px) {
   .promo__fila {
