@@ -1,0 +1,48 @@
+@use "var-mix";
+
+/* Cursor */
+
+p,
+h1,
+h2,
+h3,
+h4,
+span {
+  cursor: default;
+}
+
+a * {
+  cursor: pointer;
+}
+
+/* Fuentes  */
+
+p,
+a,
+ul,
+span {
+  font-family: "Noto Serif", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+/* Enlaces */
+
+a {
+  color: var-mix.$white;
+  text-decoration: none;
+}
+
+/* Títulos */
+
+.titulo-principal {
+  font-size: 3rem;
+  color: var-mix.$white;
+
+  background-color: var-mix.$skyblue;
+}

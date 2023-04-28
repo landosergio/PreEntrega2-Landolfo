@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- ESTILO -->
-
-    <link href="styles/style1.css" rel="stylesheet" type="text/css" />
-
     <!-- FAVICON -->
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -12,15 +8,14 @@
     <!-- FUENTES -->
 
     <!-- Oswald -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <!-- Noto Serif -->
 
+    <!-- Noto Serif -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -28,75 +23,137 @@
     />
 
     <!-- META -->
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercado Liebre</title>
+    <meta name="description" content="Últimas compras realizadas." />
+    <meta name="keywords" content="mercado, compras" />
+
+    <!-- ESTILO PERSONALIZADO -->
+    <link rel="stylesheet" href="compras-css/compras-style.css" />
+
+    <!-- TÍTULO -->
+    <title>Compras | Mercado Liebre</title>
   </head>
 
   <!-- BODY -->
-
   <body>
+    <!--  -->
     <!-- HEADER -->
-
-    <header>
-      <div id="logo-y-tit">
+    <header class="header">
+      <div class="header__brand">
         <a href="index.html">
-          <img src="images/logo.png" id="logo" alt="Logo de Mercado Liebre" />
+          <img src="images/logo.png" alt="Logo de Mercado Liebre" />
         </a>
-        <a href="index.html"><h2 id="tit">Mercado Liebre</h2></a>
+        <h2><a href="index.html">Mercado Liebre</a></h2>
       </div>
 
       <!-- Nav -->
-
-      <nav>
+      <nav class="header__nav">
         <ul>
           <li><a href="index.html"> Inicio</a></li>
           <li><a href="ofertas.html"> Ofertas </a></li>
           <li><a href="compras.html"> Compras </a></li>
-          <li><a>Carrito</a></li>
+          <li><a href="#">Carrito</a></li>
           <li><a href="ayuda.html"> Ayuda </a></li>
         </ul>
       </nav>
     </header>
 
+    <h1>Tus últimas compras</h1>
+
+    <!-- MAIN -->
+
     <main>
-      <h1>Tus últimas compras</h1>
-
       <!-- Sección "Compras" -->
+      <section class="seccion-compras">
+        <!-- Compra -->
+        <div class="seccion-compras__compra">
+          <h3 class="seccion-compras__nombre-producto">TV Samsung LED 50"</h3>
 
-      <section>
-        <div class="compra">
-          <img src="images/tv-samsung.png" alt="TV Samsung 50 pulgadas" />
-          <p class="info-prod">TV Samsung 50 pulgadas</p>
-          <div class="opciones">
-            <a href="articulo.html"><p>Volver a comprar</p></a>
-            <a href="ayuda.html"><p>Ayuda</p></a>
+          <img
+            class="seccion-compras__imagen"
+            src="images/tv-samsung.png"
+            alt="TV Samsung 50 pulgadas"
+          />
+          <div class="seccion-compras__info-prod">
+            <p>Comprado el 12/04/2023 en Frávega.</p>
+            <p>Este producto puede devolverse hasta el 12/05/2023</p>
+          </div>
+
+          <div class="seccion-compras__opciones">
+            <a href="articulo.html"
+              ><span class="button--light">Publicación</span></a
+            >
+            <a href="ayuda.html"><span class="button--light">Ayuda</span></a>
           </div>
         </div>
-        <div class="compra">
-          <img src="images/tv-samsung.png" alt="TV Samsung 50 pulgadas" />
-          <p class="info-prod">TV Samsung 50 pulgadas</p>
-          <div class="opciones">
-            <a href="articulo.html"><p>Volver a comprar</p></a>
-            <a href="ayuda.html"><p>Ayuda</p></a>
+
+        <!-- Compra -->
+        <div class="seccion-compras__compra">
+          <h3 class="seccion-compras__nombre-producto">
+            Cocina escorial gas natural 4 hornallas
+          </h3>
+          <img
+            class="seccion-compras__imagen"
+            src="images/cocina.jpg"
+            alt="TV Samsung 50 pulgadas"
+          />
+          <div class="seccion-compras__info-prod">
+            <p>Comprado el 8/01/2023 en Tienda Samsung.</p>
+            <p>Este producto ya no tiene devolución.</p>
+          </div>
+          <div class="seccion-compras__opciones">
+            <a href="articulo.html"
+              ><span class="button--light">Publicación</span></a
+            >
+            <a href="ayuda.html"><span class="button--light">Ayuda</span></a>
           </div>
         </div>
-        <div class="compra">
-          <img src="images/tv-samsung.png" alt="TV Samsung 50 pulgadas" />
-          <p class="info-prod">TV Samsung 50 pulgadas</p>
-          <div class="opciones">
-            <a href="articulo.html"><p>Volver a comprar</p></a>
-            <a href="ayuda.html"><p>Ayuda</p></a>
+
+        <!-- Compra -->
+        <div class="seccion-compras__compra">
+          <h3 class="seccion-compras__nombre-producto">
+            Zapatillas Nike Run Faster Black
+          </h3>
+
+          <img
+            class="seccion-compras__imagen"
+            src="images/zapatilla.jpeg"
+            alt="Zapatilla"
+          />
+          <div class="seccion-compras__info-prod">
+            <p>Comprado el 20/12/2022 a John Doe.</p>
+            <p>Este producto ya no tiene devolución.</p>
+          </div>
+          <div class="seccion-compras__opciones">
+            <a href="articulo.html"
+              ><span class="button--light">Publicación</span></a
+            >
+            <a href="ayuda.html"><span class="button--light">Ayuda</span></a>
           </div>
         </div>
-        <div class="compra">
-          <img src="images/tv-samsung.png" alt="TV Samsung 50 pulgadas" />
-          <p class="info-prod">TV Samsung 50 pulgadas</p>
-          <div class="opciones">
-            <a href="articulo.html"><p>Volver a comprar</p></a>
-            <a href="ayuda.html"><p>Ayuda</p></a>
+
+        <!-- Compra -->
+        <div class="seccion-compras__compra">
+          <h3 class="seccion-compras__nombre-producto">
+            Piano vertical alemán 88 teclas
+          </h3>
+
+          <img
+            class="seccion-compras__imagen"
+            src="images/piano.png"
+            alt="Piano"
+          />
+          <div class="seccion-compras__info-prod">
+            <p>Comprado el 8/01/2023 en Dexter Shop.</p>
+            <p>Este producto ya no tiene devolución.</p>
+          </div>
+          <div class="seccion-compras__opciones">
+            <a href="articulo.html"
+              ><span class="button--light">Publicación</span></a
+            >
+            <a href="ayuda.html"><span class="button--light">Ayuda</span></a>
           </div>
         </div>
       </section>
@@ -105,23 +162,25 @@
     <!-- FOOTER -->
 
     <footer>
-      <div class="footerbox">
+      <div class="footer__container">
+        <!-- Redes -->
         <div class="redes">
-          <div class="red">
-            <p>Facebook</p>
-            <img src="images/fb-logo.png" alt="" />
+          <div class="redes__red">
+            <span>Facebook</span>
+            <img src="images/fb-logo.png" alt="Logo de Facebook" />
           </div>
-          <div class="red">
-            <p>Twitter</p>
-            <img src="images/tw-logo.png" alt="" />
+          <div class="redes__red">
+            <span>Twitter</span>
+            <img src="images/tw-logo.png" alt="Logo de Twitter" />
           </div>
-          <div class="red">
-            <p>Instagram</p>
-            <img src="images/ig-logo.png" alt="" />
+          <div class="redes__red">
+            <span>Instagram</span>
+            <img src="images/ig-logo.png" alt="Logo de Instagram" />
           </div>
         </div>
-        <div class="mapa-y-tit">
-          <p>Nuestras oficinas</p>
+
+        <div class="mapa">
+          <span>Nuestras oficinas</span>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26075.023242718868!2d25.198602365691!3d0.5215123473433182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1678456933957!5m2!1ses-419!2sar"
             width="300"

@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  cursor: default;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+}
+a img {
+  cursor: pointer;
+}
+
+img {
+  width: 5rem;
+}
+
+/* Fuentes  */
+p,
+a,
+ul,
+span {
+  font-family: "Noto Serif", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  padding: 1rem 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  background-color: skyblue;
+}
+
+.button, .button--light, .button--dark {
+  padding: 0.4rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button--dark {
+  color: white;
+  background-color: rgb(33, 37, 41);
+  box-shadow: 1px -1px 4px white;
+}
+.button--dark:hover {
+  background-color: black;
+}
+.button--dark:active {
+  box-shadow: -1px 1px 4px white;
+}
+
+.button--light {
+  color: rgb(33, 37, 41);
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(33, 37, 41);
+}
+.button--light:hover {
+  background-color: rgb(220, 220, 220);
+}
+.button--light:active {
+  box-shadow: -1px -1px 4px black;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.redes__red {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.redes__red span {
+  margin-right: 0.5rem;
+  color: white;
+}
+.redes__red img {
+  width: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  background-color: rgb(255, 231, 235);
+}
+.header__brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+}
+.header__brand img {
+  width: 60px;
+}
+.header__brand h2 {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.header__brand h2 a {
+  color: black;
+}
+.header__brand h2 a:hover {
+  color: white;
+}
+.header__nav {
+  width: 100%;
+  background-color: rgb(33, 37, 41);
+}
+.header__nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  margin: 0.5rem;
+}
+.header__nav ul li {
+  padding: 0.5rem 0;
+}
+.header__nav ul li a:hover {
+  color: rgb(220, 220, 220);
+}
+
+@media screen and (min-width: 576px) {
+  .header__brand {
+    padding: 0.5rem 1rem;
+  }
+  .header__brand h2 {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+  .header__nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 1rem;
+  }
+  .header__nav ul li {
+    padding: 0.4rem 1.5rem 0.4rem 0;
+    font-size: 1rem;
+  }
+}
+footer {
+  background-color: rgb(33, 37, 41);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+.footer__container .redes {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.footer__container .mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.footer__container .mapa span {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (min-width: 576px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__container .redes {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .footer__container .redes img {
+    width: 3.5rem;
+  }
+  .footer__container .redes span {
+    margin: 0 1.5rem 0 0;
+  }
+  .footer__container .mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 2rem;
+  }
+  .footer__container .mapa span {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: white;
+  }
+}
+.seccion-compras__compra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "nombre nombre" "imagen info " "opciones opciones";
+  row-gap: 0.2rem;
+  max-width: 576px;
+  margin: 3rem auto;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+}
+.seccion-compras__nombre-producto {
+  grid-area: nombre;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+  background-color: skyblue;
+  border: 1px solid rgb(220, 220, 220);
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.seccion-compras__imagen {
+  grid-area: imagen;
+  justify-self: center;
+  align-self: center;
+  width: 10rem;
+  height: 10rem;
+  padding: 0.5rem;
+  background-color: white;
+}
+.seccion-compras__info-prod {
+  grid-area: info;
+  height: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: rgb(255, 231, 235);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+.seccion-compras__opciones {
+  grid-area: opciones;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  font-weight: 400;
+  background-color: skyblue;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .seccion-compras__compra {
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-areas: "imagen nombre nombre" "imagen info opciones";
+    grid-auto-rows: 1fr 3fr;
+    max-width: 992px;
+    row-gap: 0.4rem;
+    column-gap: 0.4rem;
+  }
+  .seccion-compras__nombre-producto {
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .seccion-compras__imagen {
+    width: 15rem;
+    height: 15rem;
+  }
+  .seccion-compras__info-prod {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .seccion-compras__opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+/*# sourceMappingURL=compras-style.css.map */

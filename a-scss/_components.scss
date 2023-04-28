@@ -1,0 +1,292 @@
+@use "var-mix";
+
+// PRODUCTO
+
+.producto {
+  height: 100%;
+  position: relative;
+
+  &__precio-producto {
+    font-size: 1rem;
+    font-weight: 400;
+
+    background-color: var-mix.$skyblue;
+  }
+
+  &__imagen-producto {
+    margin-top: calc(0.3vw + 0.3vh);
+
+    background-color: var-mix.$white;
+  }
+  &__info-adicional {
+    @include var-mix.flex(column, center, center);
+
+    width: 100%;
+    height: 4rem;
+
+    font-size: 0.7rem;
+  }
+}
+
+// Producto -- columna
+
+.seccion-productos--columna {
+  .producto__precio-producto {
+    font-size: 0.6rem;
+  }
+
+  .producto__imagen-producto {
+    margin-top: calc(0.1vw + 0.1vh);
+  }
+}
+
+/**/ /**/ /* Animación producto */ /**/ /**/
+.producto--animacion {
+  &__contenedor-relativo-imagen {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  &__info-adicional {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    padding: 0 2%;
+
+    text-align: center;
+
+    opacity: 0;
+    color: var-mix.$custom-darkgrey;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:hover {
+      .producto {
+        &__precio-producto {
+          transform: scale(1.1, 1.1);
+          z-index: 2;
+          border: 2px solid var-mix.$custom-grey;
+
+          transition: all 0.2s ease-in-out;
+        }
+
+        &__imagen-producto {
+          position: absolute;
+
+          box-sizing: content-box;
+          padding-bottom: 35%;
+          border: 2px solid var-mix.$custom-grey;
+
+          transition: all 0.2s ease-in-out;
+        }
+
+        &--animacion {
+          &__contenedor-relativo-imagen {
+            transform: scale(1.2, 1.2) translate(-1%, 7%);
+            transition: all 0.2s ease-in-out;
+            z-index: 2;
+          }
+
+          &__info-adicional {
+            opacity: 1;
+            bottom: -30%;
+
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+// Responsive
+
+/* 420px */
+
+@media screen and (min-width: 420px) {
+  .producto {
+    &__precio-producto {
+      font-size: 1.2rem;
+    }
+    &__info-adicional {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/* 768px */
+
+@media screen and (min-width: 768px) {
+  .producto {
+    &__imagen-producto {
+      margin-top: calc(0.2vw + 0.2vh);
+    }
+
+    &__info-adicional {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+/* 992px */
+
+@media screen and (min-width: 992px) {
+  .producto {
+    &__precio-producto {
+      font-size: 1.2rem;
+    }
+
+    &__info-adicional {
+      .ofertas {
+        font-size: 0.6rem;
+      }
+      .index,
+      .articulo {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .seccion-productos--columna .producto__precio-producto {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .producto {
+    &--animacion__info-adicional {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// REDES SOCIALES
+
+.redes {
+  @include var-mix.flex(column, center, flex-start);
+
+  &__red {
+    @include var-mix.flex(row, stretch, center);
+
+    padding: 0.4rem 0;
+
+    img {
+      max-width: 2rem;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// PROMO
+
+.promo {
+  &__fila {
+    height: 15rem;
+
+    background: rgb(9, 79, 193);
+    background: linear-gradient(
+      90deg,
+      rgba(9, 79, 193, 1) 0%,
+      rgba(33, 102, 214, 1) 35%,
+      rgba(135, 206, 235, 1) 100%
+    );
+
+    border: 3px solid rgb(88, 88, 88);
+  }
+
+  &__texto {
+    font-size: 1rem;
+  }
+
+  button {
+    position: relative;
+
+    .promo__tarjeta {
+      position: absolute;
+      top: -60%;
+      right: -40%;
+
+      width: 60%;
+    }
+  }
+
+  &__imagen img {
+    width: 60%;
+  }
+}
+// PROMO -- animación
+
+.promo--animacion {
+  .promo {
+    &__fila {
+      background-image: url("../images/supermercado.jpg");
+
+      background-size: 170%;
+      background-position: 0% 100%;
+
+      animation: fondo-super 10s infinite 0s linear;
+    }
+
+    &__imagen {
+      img {
+        animation: liebre 0.5s infinite 0s linear;
+      }
+    }
+  }
+}
+
+@keyframes liebre {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-20deg) translatey(-10px);
+  }
+  70% {
+    transform: rotate(30deg);
+  }
+  100% {
+  }
+}
+
+@keyframes fondo-super {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 243% 100%;
+  }
+}
+
+// PROMO BÁSICA
+
+// Responsive
+
+/* 576px */
+
+@media screen and (min-width: 576px) {
+  .promo {
+    &__fila {
+      height: 20rem;
+    }
+    &__texto {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/* 768px */
+
+@media screen and (min-width: 768px) {
+  .promo {
+    &__fila {
+      height: 15rem;
+    }
+
+    &__imagen img {
+      width: 40%;
+    }
+  }
+}
