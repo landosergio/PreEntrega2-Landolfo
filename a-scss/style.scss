@@ -1,3 +1,5 @@
+// Estilo c/ Bootstrap
+
 @use "var-mix";
 @use "general";
 @use "components";
@@ -7,3 +9,13 @@
 @use "index";
 @use "ofertas";
 @use "ayuda";
+
+// Estilo "Compras"
+
+@use "compras-general";
+@use "compras-components";
+
+@use "compras-header";
+@use "compras-footer";
+
+@use "compras";

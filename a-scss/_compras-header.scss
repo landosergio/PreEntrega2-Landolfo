@@ -1,0 +1,119 @@
+@use "var-mix";
+
+.pagina-compras {
+  //
+  .header {
+    @include var-mix.flex(column, stretch, flex-start);
+    background-color: var-mix.$custom-pink;
+
+    &__brand {
+      @include var-mix.flex(row, flex-start, center);
+
+      padding: 0.5rem 0rem 0.5rem 0.5rem;
+
+      img {
+        width: 60px;
+      }
+
+      h2 {
+        margin-left: 0.5rem;
+
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        a {
+          color: black;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    // Navbar
+
+    &__nav {
+      @include var-mix.flex(column, stretch, flex-start);
+
+      width: 100%;
+      background-color: var-mix.$custom-darkgrey;
+
+      ul {
+        @include var-mix.flex(column, stretch, flex-start);
+        margin: 0.5rem;
+        li {
+          padding: 0.5rem 0;
+          a:hover {
+            color: var-mix.$custom-grey;
+          }
+        }
+      }
+
+      form {
+        @include var-mix.flex(row, stretch, flex-start);
+
+        margin: 0 0.5rem 0.5rem;
+
+        input,
+        button {
+          height: 2rem;
+
+          margin-right: 0.4rem;
+
+          color: white;
+
+          background-color: var-mix.$custom-darkgrey;
+          border: 1px solid white;
+
+          border-radius: 5px;
+        }
+        input {
+          width: 10rem;
+        }
+        button {
+          width: 4rem;
+        }
+      }
+    }
+  }
+
+  // RESPONSIVE
+
+  @media screen and (min-width: 768px) {
+    .header {
+      &__brand {
+        padding: 0.5rem 1rem;
+
+        h2 {
+          margin-left: 1rem;
+
+          font-size: 2rem;
+        }
+      }
+
+      &__nav {
+        @include var-mix.flex(row, space-between, center);
+
+        ul {
+          @include var-mix.flex(row, flex-start, center);
+          margin: 0.5rem 1rem;
+          li {
+            padding: 0.4rem 1.5rem 0.4rem 0;
+
+            font-size: 1rem;
+          }
+        }
+
+        form {
+          margin: 0.5rem 0.5rem;
+          input {
+            width: 15rem;
+          }
+        }
+      }
+    }
+  }
+  //
+  //
+}

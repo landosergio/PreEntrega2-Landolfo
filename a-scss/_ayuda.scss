@@ -1,19 +1,25 @@
 @use "var-mix";
 
-.ayuda {
-  background-color: var-mix.$custom-pink;
+.bs {
+  //
 
-  #nombre,
-  #email {
-    max-width: 300px;
-  }
+  .ayuda {
+    background-color: var-mix.$custom-pink;
 
-  #flexRadioDefault {
-    &0:checked,
-    &1:checked,
-    &2:checked {
-      background-color: var-mix.$custom-darkgrey;
-      border-color: var-mix.$custom-darkgrey;
+    #nombre,
+    #email {
+      max-width: 300px;
+    }
+
+    #flexRadioDefault {
+      &0:checked,
+      &1:checked,
+      &2:checked {
+        background-color: var-mix.$custom-darkgrey;
+        border-color: var-mix.$custom-darkgrey;
+      }
     }
   }
+  //
+  //
 }

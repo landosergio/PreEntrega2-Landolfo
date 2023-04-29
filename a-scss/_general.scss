@@ -1,48 +1,53 @@
 @use "var-mix";
 
-/* Cursor */
+.bs {
+  //
+  /* Cursor */
 
-p,
-h1,
-h2,
-h3,
-h4,
-span {
-  cursor: default;
-}
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  span {
+    cursor: default;
+  }
 
-a * {
-  cursor: pointer;
-}
+  a * {
+    cursor: pointer;
+  }
 
-/* Fuentes  */
+  /* Fuentes  */
 
-p,
-a,
-ul,
-span {
-  font-family: "Noto Serif", serif;
-}
+  p,
+  a,
+  ul,
+  span {
+    font-family: "Noto Serif", serif;
+  }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Oswald", sans-serif;
-}
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Oswald", sans-serif;
+  }
 
-/* Enlaces */
+  /* Enlaces */
 
-a {
-  color: var-mix.$white;
-  text-decoration: none;
-}
+  a {
+    color: var-mix.$white;
+    text-decoration: none;
+  }
 
-/* Títulos */
+  /* Títulos */
 
-.titulo-principal {
-  font-size: 3rem;
-  color: var-mix.$white;
+  .titulo-principal {
+    font-size: 3rem;
+    color: var-mix.$white;
 
-  background-color: var-mix.$skyblue;
+    background-color: var-mix.$skyblue;
+  }
+  //
+  //
 }

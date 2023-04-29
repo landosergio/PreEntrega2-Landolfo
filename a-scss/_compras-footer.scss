@@ -1,0 +1,70 @@
+@use "var-mix";
+
+.pagina-compras {
+  //
+  footer {
+    background-color: var-mix.$custom-darkgrey;
+  }
+
+  .footer__container {
+    @include var-mix.flex(column, stretch, center);
+
+    .redes {
+      margin-top: 1rem;
+
+      font-weight: bold;
+    }
+
+    .mapa {
+      @include var-mix.flex(column, center, center);
+
+      margin: 2rem 0;
+
+      span {
+        margin-bottom: 0.5rem;
+
+        font-weight: bold;
+        color: white;
+      }
+    }
+  }
+
+  // RESPONSIVE
+
+  @media screen and (min-width: 576px) {
+    .footer__container {
+      @include var-mix.flex(row, space-between, center);
+
+      .redes {
+        margin-left: 2rem;
+
+        font-size: 1rem;
+
+        img {
+          width: 2rem;
+        }
+
+        span {
+          margin: 0 1.5rem 0 0;
+        }
+      }
+
+      .mapa {
+        @include var-mix.flex(column, center, center);
+
+        width: 300px;
+
+        margin: 2rem;
+
+        span {
+          margin-bottom: 0.5rem;
+
+          font-weight: bold;
+          color: white;
+        }
+      }
+    }
+  }
+  //
+  //
+}
