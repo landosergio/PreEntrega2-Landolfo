@@ -131,6 +131,10 @@ h1 {
   color: white;
 }
 .header__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
   width: 100%;
   background-color: rgb(33, 37, 41);
 }
@@ -147,14 +151,42 @@ h1 {
 .header__nav ul li a:hover {
   color: rgb(220, 220, 220);
 }
+.header__nav form {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-start;
+  margin: 0 0.5rem 0.5rem;
+}
+.header__nav form input,
+.header__nav form button {
+  height: 2rem;
+  margin-right: 0.4rem;
+  color: white;
+  background-color: rgb(33, 37, 41);
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.header__nav form input {
+  width: 10rem;
+}
+.header__nav form button {
+  width: 4rem;
+}
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .header__brand {
     padding: 0.5rem 1rem;
   }
   .header__brand h2 {
     margin-left: 1rem;
     font-size: 2rem;
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .header__nav ul {
     display: flex;
@@ -166,6 +198,12 @@ h1 {
   .header__nav ul li {
     padding: 0.4rem 1.5rem 0.4rem 0;
     font-size: 1rem;
+  }
+  .header__nav form {
+    margin: 0.5rem 0.5rem;
+  }
+  .header__nav form input {
+    width: 15rem;
   }
 }
 footer {
@@ -204,10 +242,10 @@ footer {
   }
   .footer__container .redes {
     margin-left: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .footer__container .redes img {
-    width: 3.5rem;
+    width: 2rem;
   }
   .footer__container .redes span {
     margin: 0 1.5rem 0 0;
