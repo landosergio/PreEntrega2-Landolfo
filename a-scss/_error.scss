@@ -1,0 +1,34 @@
+@use "var-mix";
+
+.error {
+  @include var-mix.flex(column, center, center);
+  animation: fondo 2s infinite 0s;
+
+  img {
+    animation: conejo linear 0.5s infinite 0s;
+  }
+}
+
+@keyframes fondo {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: red;
+  }
+}
+
+@keyframes conejo {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
